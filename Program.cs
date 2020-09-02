@@ -71,6 +71,11 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player upperSore = new SoreLoserUpperHalfPlayer();
+            upperSore.Name = "Amanda";
+
+            upperSore.Play(player1);
+
             List<Player> players = new List<Player>()
             {
                 player1,
@@ -82,7 +87,8 @@ namespace ShootingDice
                 human,
                 creativeSmack,
                 soreLoser,
-                upper
+                upper,
+                upperSore
             };
 
             PlayMany(players);

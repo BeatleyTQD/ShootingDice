@@ -6,11 +6,11 @@ namespace ShootingDice
     // A player the prompts the user to enter a number for a roll
     public class HumanPlayer : Player
     {
-    
+
         public override void Play(Player other)
         {
             // Call roll for "this" object and for the "other" object
-            Console.Write("What number do you want to roll, human?:");
+            Console.Write("What number do you want to roll, human?: ");
             int myRoll = int.Parse(Console.ReadLine());
             int otherRoll = other.Roll();
 
