@@ -64,6 +64,13 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player upper = new UpperHalfPlayer();
+            upper.Name = "Tyler";
+
+            upper.Play(creativeSmack);
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>()
             {
                 player1,
@@ -74,7 +81,8 @@ namespace ShootingDice
                 higher,
                 human,
                 creativeSmack,
-                soreLoser
+                soreLoser,
+                upper
             };
 
             PlayMany(players);

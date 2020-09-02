@@ -22,7 +22,7 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
-                throw new Exception("I can't lose! *flips table*");
+                throw new Exception("I can't lose! If I don't win, no one wins! *flips table*");
             }
             else
             {
