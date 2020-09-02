@@ -51,6 +51,12 @@ namespace ShootingDice
             human.Play(higher);
             Console.WriteLine("-------------------");
 
+            CreativeSmackTalkingPlayer creativeSmack = new CreativeSmackTalkingPlayer();
+            creativeSmack.Name = "Mega Will";
+
+            creativeSmack.Play(player2);
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>()
             {
                 player1,
