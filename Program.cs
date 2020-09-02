@@ -43,6 +43,13 @@ namespace ShootingDice
             higher.Name = "Kyle";
 
             higher.Play(large);
+            Console.WriteLine("-------------------");
+
+            Player human = new HumanPlayer();
+            human.Name = "Human";
+
+            human.Play(higher);
+            Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>()
             {
@@ -51,7 +58,8 @@ namespace ShootingDice
                 player3,
                 large,
                 smack1,
-                higher
+                higher,
+                human
             };
 
             PlayMany(players);
