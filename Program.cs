@@ -51,10 +51,17 @@ namespace ShootingDice
             human.Play(higher);
             Console.WriteLine("-------------------");
 
-            CreativeSmackTalkingPlayer creativeSmack = new CreativeSmackTalkingPlayer();
+            Player creativeSmack = new CreativeSmackTalkingPlayer();
             creativeSmack.Name = "Mega Will";
 
             creativeSmack.Play(player2);
+            Console.WriteLine("-------------------");
+
+            Player soreLoser = new SoreLoserPlayer();
+            soreLoser.Name = "Brandon";
+
+            soreLoser.Play(player1);
+
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>()
@@ -65,7 +72,9 @@ namespace ShootingDice
                 large,
                 smack1,
                 higher,
-                human
+                human,
+                creativeSmack,
+                soreLoser
             };
 
             PlayMany(players);
